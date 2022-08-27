@@ -1,0 +1,141 @@
+body{
+    margin: 0px;
+}
+.main-container{
+    background-image: url("spices.jpg");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    height:100vh;
+    position: relative;
+    transition: filter 0.7s;  
+}
+
+
+.main-container h1{
+    position: absolute;
+    font-size: 60px;
+    color: rgb(255, 255, 255);
+    text-align: right;
+    top:40%;
+    left:50%;
+    overflow: hidden;
+    text-shadow: 2px 2px 2px black;
+}
+
+.main-container .btn {
+    position: absolute;
+    top:70%;
+    left:70%;
+    width: 190px;
+    padding: 10px;
+    font-size: 20px;
+    border: none;
+    border-radius: 7px;
+    box-sizing: border-box;
+    background-color: palevioletred;
+    font-weight: bold;
+    font-family: cursive;
+    text-transform: uppercase;
+    box-shadow: 2px 2px red;
+    cursor: pointer;
+}
+
+
+.main-container .btn:hover{
+    filter:brightness(0.5);
+}
+
+.active.main-container{
+    filter: blur(6px) brightness(0.4);
+}
+
+.pop-container{
+    position: fixed;
+    top: 30%;
+    left:50%;
+    transform: translateX(-50%);
+    width: 345px;
+    height: 200px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url("20percOff.jpg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 30px;
+    box-sizing: border-box;
+    box-shadow: 5px 2px 4px yellow;
+    opacity: 1px;
+    transition: all 0.5s;
+}
+
+h4{
+    font-size: 30px;
+    font-weight: 1000;
+    color: rgb(6, 6, 37);
+    padding: 12px 0px ;
+    margin: 2px 2px;
+    font-family: cursive;
+    text-transform: capitalize;
+    text-shadow: 1px 1px 1px black;
+}
+
+label{
+    color: rgb(6, 6, 37);
+    font-family : Georgia, 'Times New Roman', Times, serif;
+    font-weight: 100;
+}
+
+.popup-btn{
+    width: 70px;
+    padding: 4px;
+    color: rgb(46, 11, 11);
+    padding: 2px;
+    font-size: 15px;
+    border: 2px solid yellow;
+    border-radius: 2px;
+    box-sizing: border-box;
+    background-color: rgb(156, 218, 13);
+    font-weight: bold;
+    font-family: cursive;
+    text-transform: uppercase;
+    box-shadow: 2px 2px 4px white;
+    cursor: pointer;
+}
+.popup-btn:hover{
+    filter: brightness(0.7);
+}
+
+.input{
+    border: 2px solid;
+    padding: 10px 0px;
+    font-size:15px ;
+    margin: 12px;
+    text-align: center;
+}
+
+.input::placeholder{
+    color: rgb(114, 111, 111);
+}
+
+.close-icon{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    cursor: pointer;
+    font-size: 30px;
+}
+
+.close-icon:hover{
+    color: rgb(209, 12, 12);
+}
+
+.active.pop-container{
+    visibility: hidden;
+    opacity: 0;
+    top:10%;
+}
